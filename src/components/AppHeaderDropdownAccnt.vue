@@ -1,4 +1,5 @@
 <template>
+  <!-- eslint-disable -->
   <CDropdown variant="nav-item">
     <CDropdownToggle placement="bottom-end" class="py-0" :caret="false">
       <CAvatar :src="avatar" size="md" />
@@ -40,7 +41,7 @@
       <CDropdownItem>
         <CIcon icon="cil-shield-alt" /> Lock Account
       </CDropdownItem>
-      <CDropdownItem> <CIcon icon="cil-lock-locked" /> Logout </CDropdownItem>
+      <CDropdownItem @click="logout()"> <CIcon icon="cil-lock-locked" /> Logout </CDropdownItem>
     </CDropdownMenu>
   </CDropdown>
 </template>
@@ -54,6 +55,12 @@ export default {
       avatar: avatar,
       itemsCount: 42,
     }
+  },
+  methods: {
+    logout() {
+      this.$store.commit('Logout')
+      this.$router.push('/login')
+    },
   },
 }
 </script>

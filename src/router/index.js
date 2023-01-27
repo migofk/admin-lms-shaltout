@@ -2,6 +2,7 @@ import { h, resolveComponent } from 'vue'
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 import DefaultLayout from '@/layouts/DefaultLayout'
+//import store from '@/store'
 
 const routes = [
   {
@@ -284,12 +285,22 @@ const routes = [
       {
         path: 'login',
         name: 'Login',
-        component: () => import('@/views/pages/Login'),
+        component: () => import('@/views/auth/Login'),
       },
       {
         path: 'register',
         name: 'Register',
         component: () => import('@/views/pages/Register'),
+      },
+      {
+        path: 'forget-password',
+        name: 'ForgetPassword',
+        component: () => import('@/views/auth/ForgetPassword'),
+      },
+      {
+        path: 'reset-password/:email',
+        name: 'ResetPassword',
+        component: () => import('@/views/auth/ResetPassword'),
       },
     ],
   },
@@ -303,5 +314,14 @@ const router = createRouter({
     return { top: 0 }
   },
 })
+/*
+const except = ['ForgetPassword', 'ResetPassword', ]
+router.beforeEach((to, from, next) => {
+  let token = store.state.token
+  console.log('router ==' + token)
+  if (to.name !== 'Login' && !token && !except.includes(to.name))
+    next({ name: 'Login' })
+  else next()
+})*/
 
 export default router
