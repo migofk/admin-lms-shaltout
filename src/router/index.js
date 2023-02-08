@@ -2,7 +2,7 @@ import { h, resolveComponent } from 'vue'
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 import DefaultLayout from '@/layouts/DefaultLayout'
-//import store from '@/store'
+import store from '@/store'
 
 const routes = [
   {
@@ -260,12 +260,66 @@ const routes = [
         name: 'Widgets',
         component: () => import('@/views/widgets/Widgets.vue'),
       },
+      {
+        path: '/categories',
+        name: 'Categories',
+        component: {
+          render() {
+            return h(resolveComponent('router-view'))
+          },
+        },
+        children: [
+          {
+            path: '/categories',
+            name: 'Categories',
+            component: () => import('@/views/categories/Categories'),
+          },
+          {
+            path: '/categories/add',
+            name: 'Add Category',
+            component: () => import('@/views/categories/CategoriesAdd'),
+          },
+          {
+            path: 'categories/edit/:id',
+            name: 'Edit Category',
+            component: () => import('@/views/categories/CategoriesEdit'),
+          },
+        ],
+      },
+      {
+        path: '/products',
+        name: 'Products',
+        component: {
+          render() {
+            return h(resolveComponent('router-view'))
+          },
+        },
+        children: [
+          {
+            path: '/products',
+            name: 'Products',
+            component: () => import('@/views/products/Products'),
+          },
+          {
+            path: '/products/add',
+            name: 'Add Product',
+            component: () => import('@/views/products/ProductsAdd'),
+          },
+          {
+            path: 'products/edit/:id',
+            name: 'Edit Product',
+            component: () => import('@/views/products/ProductsEdit'),
+          },
+        ],
+      },
     ],
   },
+
+  
   {
-    path: '/pages',
+    path: '/auth',
     redirect: '/pages/404',
-    name: 'Pages',
+    name: 'Auth',
     component: {
       render() {
         return h(resolveComponent('router-view'))
@@ -304,6 +358,7 @@ const routes = [
       },
     ],
   },
+  
 ]
 
 const router = createRouter({
@@ -314,7 +369,7 @@ const router = createRouter({
     return { top: 0 }
   },
 })
-/*
+
 const except = ['ForgetPassword', 'ResetPassword', ]
 router.beforeEach((to, from, next) => {
   let token = store.state.token
@@ -322,6 +377,6 @@ router.beforeEach((to, from, next) => {
   if (to.name !== 'Login' && !token && !except.includes(to.name))
     next({ name: 'Login' })
   else next()
-})*/
+})
 
 export default router

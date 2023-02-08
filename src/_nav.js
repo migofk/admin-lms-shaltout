@@ -1,3 +1,5 @@
+import i18n from './i18n'
+const { t } = i18n.global;
 export default [
   {
     component: 'CNavItem',
@@ -8,6 +10,69 @@ export default [
       color: 'primary',
       text: 'NEW',
     },
+  },
+  {
+    component: 'CNavTitle',
+    name: t('Catalog'),
+  },
+  {
+    component: 'CNavGroup',
+    name:  t('Categories'),
+    to: '/categories',
+    icon: 'cil-puzzle',
+    items: [
+      {
+        component: 'CNavItem',
+        name: 'Categories',
+        to: '/categories',
+      },
+      {
+        component: 'CNavItem',
+        name: 'Add Categories',
+        to: '/categories/add',
+      },
+    ],
+  },
+  {
+    component: 'CNavGroup',
+    name:  t('Products'),
+    to: '/products',
+    icon: 'cil-puzzle',
+    items: [
+      {
+        component: 'CNavItem',
+        name: 'Products',
+        to: '/products',
+      },
+      {
+        component: 'CNavItem',
+        name: 'Add Products',
+        to: '/products/add',
+      },
+    ],
+  },
+  {
+    component: 'CNavGroup',
+    name:  t('About'),
+    to: '/about',
+    icon: 'cil-puzzle',
+    items: [
+      {
+        component: 'CNavItem',
+        name: 'About',
+        to: '/about',
+      },
+      {
+        component: 'CNavItem',
+        name: 'Policy',
+        to: '/policy',
+      },
+      {
+        component: 'CNavItem',
+        name: 'Terms',
+        to: '/terms',
+      },
+    ],
   },
   {
     component: 'CNavTitle',

@@ -1,0 +1,1024 @@
+{
+  "Menu" : "القائمة",
+  "Post" :"منشور",
+  "Posts" :"المنشورات",
+  "Dashboard" : "لوحة القيادة",
+
+  "User Roles & Permissions" : "ادوار المستخدمين و الاذون",
+
+  "Role Permissions" : "اذون الدور",
+
+  "Role" : "دور",
+
+  "Search" : "بحث",
+
+ "customers" : "العملاء",
+
+ "customer" : "العميل",
+
+ "Product" : "المنتج",
+
+ "Products" : "المنتجات",
+
+ "Categories" : "الاقسام",
+
+ "All Customers" : "كل العملاء",
+
+ "Leads" : "عملاء محتملين",
+
+ "Clients" : "عملاء حالين",
+
+ "Lead" : "عميل محتمل",
+
+ "Client" : "عميل حالى",
+
+ "My Customers" : "عملائى",
+
+ "My Leads" : "عملائى المحتملين",
+
+ "My Clients" : "عملائى الحالين",
+
+ "Notes" : "ملاحظات",
+
+ "All Notes" : "كل الملاحظات",
+
+ "Scheduled Notes" : "ملاحظات مجدولة",
+
+ "My Notes" : "ملاحظاتى",
+
+ "My Scheduled Notes" : "ملاحظاتى المجدولة",
+
+ "Activities" : "الانشطة",
+
+ "All Activities" : "كل الانشطة",
+
+ "Open" : "المفتوح",
+
+ "Alert" : "تنبية",
+
+ "Priority" : "الاولوية",
+
+ "Services" : "الخدمات",
+
+ "All Services" : "كل الخدمات",
+
+ "Renewal Services" : "خدمات مجددة",
+
+ "Permanent Services" : "خدمات نهائية",
+
+ "Waiting Renewal" : "منتظر التجديد",
+
+ "Waiting Validation" : "منتظر الاعتماد",
+
+ "My Services" : "خدماتى",
+
+ "My Renewal Services" : "خدماتى المجددة",
+
+ "My Permanent Services" : "خدماتى النهائية",
+
+ "My Waiting Renewal" : "خدماتى المنتظرة التجديد",
+
+ "My Waiting Validation" : "خدماتى المنتظرة الاعتماد",
+
+ "Tasks" : "المهام",
+
+ "Task" : "مهمة",
+
+ "All Tasks" : "كل المهام",
+
+ "Open Tasks" : "المهام المفتوحة",
+
+ "Scheduled Tasks" : "المهام المجدولة",
+
+ "Closed Tasks" : "المهام المغلقة",
+
+ "My Tasks" : "مهامى",
+
+ "My Open Tasks" : "ماهمى المفتوحة",
+
+ "My Scheduled Tasks" : "مهامى المجدولة",
+
+ "My Closed Tasks" : "مهامى المغلقة",
+
+ "Reports" : "التقارير",
+
+ "Performance" : "الاداء",
+
+ "User Performance" : "اداء المستخدمين",
+
+ "My Performance" : "ادائى",
+
+ "Setting" : "الاعدادات",
+
+ "Company Info" : "معلومات عن الشركة",
+
+ "Taxes" : "الضرائب",
+
+ "Users" : "المستخدمين",
+
+ "User Permissions" : "اذون المستخدمين",
+
+ "Customer Types" : "نوع العملاء",
+
+ "Reasons" : "الاسباب",
+
+ "Results" : "النتائج",
+
+ "Interests" : "الاهتمام",
+
+ "Types" : "الانواع",
+
+ "Reached By" : "تم الوصول",
+
+ "Currencies" : "العملات",
+
+ "Countries" : "البلاد",
+
+ "States" : "المحافظات",
+
+ "Cities" : "المدن",
+
+ "Fields" : "المجالات",
+
+
+
+ "Tax" : "الضريبة",
+
+ "User" : "المستخدم",
+
+ "User Permission" : "اذن المستخدم",
+
+ "Permission" : "اذن",
+ "Permissions" : "الأذون",
+
+ "Customer Type" : "نوع العميل",
+
+ "Reason" : "السبب",
+
+ "Result" : "النتيجة",
+
+ "Interest" : "الاهتمام",
+
+ "Type" : "النوع",
+
+ "Currency" : "العملة",
+
+ "Country" : "البلد",
+
+ "State" : "المحافظة",
+
+ "City" : "المدينة",
+
+ "Field" : "المجال",
+
+ "Business Field" : "مجال العمل",
+
+ "Post Code" : "الكود البريدى",
+
+ "Email" : "البريد الالكترونى",
+
+ "Value/Class" : "القيمة/التصنيف",
+
+ "Website" : "الموقع",
+
+ "Logo image" : "صورة الشعار",
+
+ "Create" : "اضف",
+
+ "Edit" : "تعديل",
+
+ "Delete" : "حذف",
+
+ "Save" : "حفظ",
+
+ "Submit" : "ارسال",
+
+ "Note" : "ملاحظة",
+
+ "Internal Note" : "ملاحظات داخلية",
+
+ "Close" : "اغلاق",
+
+ "View" : "عرض",
+
+ "Online" : "اونلاين",
+
+ "Next" : "التالى",
+
+ "Pervious" : "السابق",
+
+ "Account Manager" : "مدير الحساب",
+
+ "Company" : "الشركة",
+
+ "Created at" : "تاريخ الاضافة",
+
+ "Updated at" : "تاريخ التحديث",
+
+ "Action" : "اجراء",
+
+ "Contact" : "اتصال",
+
+ "Add" : "اضف",
+
+ "Service" : "خدمة",
+
+ "Yes" : "نعم",
+
+ "No" : "لا",
+
+ "Validated" : "اعتمدت",
+
+ "Start Date" : "تاريخ البدأ",
+
+ "End Date" : "تاريخ النهاية",
+
+ "Date":"التاريخ",
+
+
+
+ "Assigned To":"المسئول",
+
+ "Comment":"تعليق",
+
+ "Service History":"تاريخ الخدمة",
+
+ "Service Informaton":"معلومات عن الخدمة",
+
+ "Add by":"بواسطة",
+
+ "Customer Informaton":"معلومات عن العميل",
+
+ "Last 7 days":"اخر 7 ايام",
+
+ "Last 30 days":"اخر 30 يوم",
+
+ "Last 3 Months":"اخر 3 اشهر",
+
+ "Last 6 Months":"اخر 6 اشهر",
+
+ "Last 12 Months":"اخر 12 شهر",
+
+ "Life Time Performance":"كل الاوقات",
+
+ "Description":"الوصف",
+
+ "Logo":"الشعار",
+ "Logo_white":"الشعار الابيض",
+ "Logo_black":"الشعار الاسود",
+
+ "Company Information":"معلومات عن الشركة",
+
+ "Customer Information":"معلومات عن العميل",
+
+ "Name":"الاسم",
+ "name":"الاسم",
+ "Percentage":"النسبة",
+
+ "Currency Name":"اسم العملة",
+
+ "Unit Name":"اسم الوحدة",
+
+ "Subunit Name":"اسم الوحدة الجزئية",
+
+ "Currency Rate":"تقييم العملة",
+
+ "Rate":"تقيم",
+
+ "Unit":"الوحدة",
+
+ "Subunit":"الوحدة الجزئية",
+
+ "Country Name":"اسم الشركة",
+
+ "Code":"الكود",
+
+ "Calling Code":"كود الاتصال",
+
+ "Progress":"التقدم",
+
+
+
+ "Login":"دخول",
+
+ "Logout":"خروج",
+
+ "Register":"تسجيل",
+
+ "Phone":"التليفون",
+
+ "Mobile":"المحمول",
+
+ "Address":"العنوان",
+
+ "Customer Profile":"ملف العميل",
+
+ "Create Contact":"اضف اتصال",
+
+ "Edit Customer":"تعديل بيانات العميل",
+
+ "Image":"صورة",
+
+ "Position":"الوظيفة",
+
+ "Edit Contact":"تعديل اتصال",
+
+ "Add Service":"اضف خدمة",
+
+ "Price":"السعر",
+
+ "Total":"الاجمالى",
+
+ "Service Details":"تفاصيل الخدمة",
+
+ "Validate & Invoice":"اعتمد و اصدر فاتورة",
+
+ "Renewal":"تجديد",
+
+ "Print Invoice":"اطبع الفاتورة",
+
+ "Edit Service":"تعديل الخدمة",
+
+ "Service will be invoiced":"سيتم اصدار فاتورة للخدمة ولن يمكنك تعديل الخدمة",
+
+ "Validate Service":"اعتمد الخدمة",
+
+ "Validate":"اعتمد",
+
+ "Add Note":"اضف ملاحظة",
+
+ "Mark As Seen":"علم كقرأت",
+
+ "Seen":"قرأت",
+
+ "Add Activity":"اضف نشاط",
+
+ "ID":"ID",
+
+ "Interested in":"مهتم ب",
+
+ "Edit Activity":"تعديل النشاط",
+
+ "All Open Activites":"كل الانشطة المفتوحة",
+
+ "All Alert Activites":"كل الانشطة بتنبية",
+
+ "All Priority Activites":"كل الانشطة باولويات",
+
+ "Show Activity":"عرض النشاط",
+
+ "Done":"تم التنفيذ",
+
+ "Mark As Done":"علم تم التنفيذ",
+
+ "Companies":"الشركات",
+
+ "Events":"الاحداث",
+
+ "Event":"الحدث",
+
+ "Category":"القسم",
+
+ "Owner":"المالك",
+
+ "Contact Person":"الشخص المفوض",
+
+ "Tax Number":"الرقم الضريبى",
+
+ "Commercial Registry":"السجل التجارى",
+
+ "About":"من نحن",
+
+ "contactus":"اتصل بنا",
+
+ "intro":"مقدمة",
+
+ "Edit About":"تعديل من نحن",
+
+ "Edit Intro":"تعديل المقدمة",
+
+ "sliders":"عرض الصور",
+
+ "Conferance" :"المؤتمر",
+
+ "Attendants" :"الحضور",
+
+ "Rejected Attendants" : "الحضور المرفوضين",
+
+ "Adult Number" :"عدد البالغين",
+
+ "Childern Number" :"عدد الاطفال",
+
+ "Childern Age" :"اعمار الاطفال",
+
+ "Arrival Date" :"تاريخ الوصول",
+
+ "Departure Date" :"تاريخ المغادرة",
+
+ "Flight Details" :"تفاصيل الرحلة الطياران",
+
+ "Package" :"باقة",
+
+ "Double Room":"غرفة مزدوجة",
+
+ "Single Room":"غرفة مفردة",
+
+ "Tickets" : "تذاكر",
+
+ "Edit Contact Us" : "تعديل اتصل بنا",
+
+ "Languages":"اللغات",
+
+ "Language":"اللغة",
+
+ "Providers":"المزودون",
+
+    "Provider":"مزود",
+
+    "our courses" : "البرامج التدريبية",
+
+    "Courses":"البرامج التدريبية",
+
+    "Course":"البرنامج التدريبي",
+
+    "Short Description":",وصف سريع",
+
+    "Discount":"خصم",
+
+    "Skills":"المهارات",
+
+    "Duration": "المدة",
+
+    "Item_langs" : "لغة المنتج",
+
+    "Item_lang" : "لغة المنتج",
+
+    "Video" : "فيديو",
+
+    "Videos" : "فيديوهات",
+
+    "Sessions" : "المحاضرات",
+
+    "Session" : "محاضرة",
+
+    "Page" : "صفحة",
+
+    "Pages" : "صفحات",
+
+    "Slider" : "عرض الصور",
+
+    "Sliders" : "عروض الصور",
+
+    "Navbar" : "الملاحة",  
+
+    "Follow Me" :"تابعونى",
+
+    "Follow us" :"تابعونا",
+
+    "Recent Posts" : "احث المنشورات",
+
+    "Get Interesting News" : "اشترك ليصلك كل جديد",
+
+    "Older Posts" : "مقالات قديمة",
+
+    "Newer Posts" : "مقالات جديدة",
+
+    "Personal Blog" : "مدونة شخصية",
+
+    "Read More" : "اقراء المزيد",
+
+    "subscribe" : "اشترك",
+
+    "Your email address" : "عنوان البريد الالكترونى",
+
+    "Continue Reading"  : "اقراء المزيد",
+
+    "YOU MIGHT ALSO LIKE..." : "مقالات قد تحبها",
+
+    "Subject" : "الموضوع",
+
+    "Message" : "الرسالة",
+
+    "Thank you I will contact you as soon as possible" : "شكرا لك سوف اقوم بالتواصل معك فى اقرب وقت ممكن",
+
+    "Shop" : "المتجر",
+
+    "Catalog" : "الكاتلوج",
+
+    "More Services" :"المزيد من الخدمات",
+
+    "Customer Service" :  "خدمة العملاء" ,
+
+    "Messages" :"رسائل",
+
+    "Home" :"الرئيسية",
+
+    "Partners": "شركائنا",
+
+    "bundles": "الباقات",
+
+    "bundle": "باقة",
+
+    "High Quality Courses": "تعلم الآن",
+
+    "Save More With Our Bundles" : "وفر مع باقاتنا",
+
+    "Start Learning Now" : "ابداء التعلم الان",
+
+    "Beginner": "مبتدئ",
+
+    "Intermediate": "متوسط",
+
+    "Advanced": "متقدم",
+
+    "About the Course": "عن البرنامج التدريبي",
+
+    "Course by" : "البرنامج التدريبي بواسطة",
+
+    "Read full biography" : "اقراء السيرة الذاتية",
+
+    "Views":"المشاهدات",
+
+    "Sales":"المبيعات",
+
+    "Overview" :"نظرة عامة",
+
+    "Buy now and save":"اشترى الان و وفر",
+
+    "Buy now":"اشترى الان",
+
+    "Password":"كلمة المرور",
+
+    "password_confirmation":"تاكيد كلمة المرور",
+
+    "Settings":"الاعدادات",
+
+    "My Courses":"برامجى التدريبية",
+
+    "My Wishlist":"الامانى",
+
+    "Wishlist":"الامانى",
+
+    "Personal Information" : "معلومات شخصية",
+
+    "Account Information" : "معلومات الحساب",
+
+    "Current Password" :"كلمة المرور الحالية" ,
+
+    "New Password" :"كلمة المرور الجديدة" ,
+
+    "Change" :"تغيير",
+
+    "Check out" : "متابعة الشراء",
+
+    "Triple" : "ثلاثية",
+
+    "Cart" : "عربة التسوق",
+
+    "Order" : "طلب",
+
+    "Orders" : "طلبات",
+
+    "My Orders" : "طلباتى",
+
+    "Reference Number" : "الرقم المرجعى",
+
+    "Payment Status" : "حالة الدفع",
+
+    "Payment Date" : "تاريخ الدفع",
+
+    "Order Number" : "رقم الدفع",
+
+    "Paid" : "تم الدفع",
+
+    "Waiting" : "انتظار",
+
+    "Available Languages" : "اللغات المتاحة",
+
+    "Signup" : "انشاء حساب",
+
+    "Remember Me" :"تذكرنى",
+
+    "View All" :"عرض المزيد",
+
+    "Share on":"شارك",
+
+    "Now Playing" : "يعرض الان",
+
+    "Terms of Use" : "شروط الاستخدام",
+
+    "Privacy Policy" : "سياسة الخصوصية",
+
+    "question" : "السؤال",
+
+    "questions" : "الاسئلة",
+
+    "quiz" : "امتحان",
+
+    "quizzes" : "الامتحانات",
+
+    "Answer" : "الاجابة",
+
+    "Answers" : "الاجابات",
+
+    "Score" : "الدرجة",
+
+    "Scores" : "الدرجات",
+
+    "Exam" : "امتحان",
+
+    "Exams" : "امتحانات",
+
+    "Start The Exam" : "ابدأ الامتحان",
+
+    "Minutes" : "دقائق",
+
+    "You need to buy the course for playing this" : "يجب شراء البرنامج التدريبي لتشغيل هذا",
+
+    "Reviews" : "المراجعات",
+
+    "Leave a Review" : "قول رايك فى البرنامج التدريبي",
+
+    "review" : "مراجعة",
+
+    "Cancel" : "الغاء",
+
+    "Quiz Questions" : "أسئلة الامتحان",
+
+   
+
+    "Group" : "مجموعة",
+
+    "Groups" : "مجموعات",
+
+    "Create Group" : "انشاء مجموعة",
+
+    "Members" : "الاعضاء",
+
+    "Member" : "عضو",
+
+    "Add Course" :"اضف البرنامج التدريبي",
+
+    "Add Member" : "اضف عضو",
+
+    "report" : "تقرير",
+
+
+
+    "Active" : "نشط",
+
+    "Deactivated" : "متوقف",
+
+    "Waiting Review" : "قيد المراجعة",
+
+    "Search results":"نتائج البحث",
+
+    "Logicel For Business":"لوجيسل للشركات",
+
+    "Thank you we will contact you as soon as possible" : "شكرا لك سوف نقوم بالتواصل معك فى اقرب وقت ممكن",
+
+    "Expired" : "انتهى",
+
+    "Cancelled" : "الغاء",
+
+    "Failed" : "فشل",
+
+    "Created_at":"تاريخ الانشاء",
+
+    "Payment":"الدفع",
+
+    "Payments":"المدفوعات",
+
+    "Ready":"جاهز",
+
+    "Cycle":"دورة",
+
+    "Cycles":"دورات",
+
+
+
+    "Your Score":"درجتك",
+
+    "Passing Degree":"درجة النجاح",
+
+    "Status":"الحالة",
+
+    "Pass":"ناجح",
+
+    "Fail":"راسب",
+
+
+
+    "SUMMARY":"الملخص",
+
+    "TOTAL":"الاجمالى",
+
+    "EGP":"جنية",
+
+    "rate":"تقيم",
+
+    "Forget Your Password?" :"هل نسيت كلمة المرور؟",
+
+
+
+    "Attempt": "محاولة",
+
+    "Cover" : "الغطاء",
+
+    "exams" : "امتحانات",
+
+    "next" : "التالى",
+
+    "previous" : "السابق",
+
+    "download" : "تحميل",
+
+    "generate certifcate" : "اصدار شهادة",
+
+    "cantTest" : "لا يمكنك الامتحان الان  امامك فترة اتتظار للامتحان مرة اخرى ",
+
+    "days" : "ايام",
+
+    "slug" :"الرابط",
+
+    "Media Library" :"مكتبة الوسائط",
+
+    "promos" :"عروض ترويجية",
+
+    "promo" :"عرض ترويج",
+
+    "balance" :"الرصيد",
+
+    "Date Start" :"تاريخ البداء",
+
+    "Date End":"تاريخ الانتهاء",
+
+    "No data or Promo is expired" :"لايوجد بيانات او ان العرض منتهى",
+
+    "You have used a promo on this order" : "هذا الطلب لا يستفاد من العرض او تم استخدام عرض اخر على الطلب",
+
+    "applied" : "مطبق",
+
+    "No items found" : "لا يوجد بيانات",
+
+    "Data has been updated" : "تم تحديث البيانات",
+
+    "Please enter correct current password" : "ادخل كلمة المرور الحالية بشكل صحيح",
+
+    "statusDescription" : "وصف الحالة",
+
+    "info" :"معلومات",
+
+    "Create New Account" : "سجل حساب جديد",
+
+    "passhint" : " الا تقل عن 8 حروف او ارقام",
+
+    "Sorting" : "الترتيب",
+
+
+
+    "job" : "الوظيفة",
+
+    "student" : "طالب",
+
+    "graduated" : "خريج",
+
+    "employee" : "موظف",
+
+    "employer" : "صاحب عمل",
+
+
+    "verify_mail" : "تأكيد التسجيل",
+
+    "Hi" : "مرحبا",
+
+    "thanks" : "شكرا",
+
+    "Your mail is verified" : "تم التحقق من بريدك ",
+
+    "Your mail is verified, thank you!" : "تم التحقق من بريدك ، شكرا لك!",
+
+    "No data found!" : "لاتوجد بيانات!",
+
+    "Your mail is verified, you need to login" : "تم التحقق من بريدك ، تحتاج إلى تسجيل الدخول",
+
+    "check your mail" : "تم الارسال تفقد بريدك!",
+
+    "resend" : "اعادة الارسال",
+
+    "Exercise Folder" : "ملف التدريبات",
+
+    "certificates" :"الشهادات",
+
+    "certificate" :"شهادة",
+
+    "share" :"شارك",
+
+    "uploadImage" : " اسحب صورة هنا او اضغط لرفع واحدة",
+
+    "commentUnderReview" : "تعليقك قيد المراجعة",
+
+    "facebookfollow":"تابعونا على الفيسبوك",
+
+    "twitterfollow":"تابعونا على تويتر",
+
+    "linkedinfollow":"تابعونا على لينكدان",
+
+    "instagramfollow":"تابعونا على انستجرام",
+
+    "youtubefollow":"تابعونا على اليوتيوب",
+
+    "Add to cart" : "اضف للعربة",
+
+    "Remove from cart" : "حذف من عربة التسوق",
+
+    "Add to wishlist" : "اضف لقائمة الامنيات",
+
+    "Remove from wishlist" : "حذف من قائمة الامنيات",
+
+    "Play" : "تشغيل",
+
+    "Facebook" : "فيسبوك",
+
+    "Twitter" : "تويتر",
+
+    "Linkedin" : "لينكدان",
+
+    "LogoutSuccess" :"تم الخروج بنجاح",
+
+    "LoginSuccess" :"مرحبا بك!",
+
+    "Enter promo code" : "ادخل كود العرض ",
+
+    "removeConfirmation" :"هل تريد حذفها؟",
+    "removedSuccess" :"تم الحذف بنجاح",
+    "savedSuccess" :"تم لحفظ بنجاح",
+    "initiatives" : "المبادرات",
+
+    "initiative" : "مبادرة",
+
+    "payment methods" : "طرق الدفع",
+
+    "gender":"النوع",
+
+    "age":"العمر",
+
+    "national_id":"الرقم القومى",
+
+    "governorate":"المحافطة",
+
+    "university":"الجامعة",
+
+    "college":"الكلية",
+
+    "graduation_year":"سنة التخرج",
+
+    "know_about_us":"كيف سمعت عنا؟",
+
+    "register_for" : "تسجيل فى",
+
+    "male" :"ذكر",
+
+    "female" :"انثى",
+
+    "id_copy" :"صورة البطاقة وجة",
+
+    "id_copy2" :"صورة البطافة ظهر",
+
+    "upload" : "رفع",
+
+    "Upload documents" : "رفع الاوراق المطلوبة",
+
+    "uploaddocText" :"يرجى التأكد من ان البطاقة تم رفعها بشكل صحيح ، ثم قم بالضغط على الإستمرار حتى نتمكن من مراجعة بياناتك والتواصل معك في أقرب وقت ممكن",
+
+    "continue" : "الاستمرار",
+
+ 
+
+    "useful_link" :"روابط مهمة",
+
+    "vision" : "رؤيتنا",
+
+    "mission" : "مهمتنا",
+
+    "Take a Video Tour":"قم بجولة فيديو للتعرف علينا",
+
+    "WHY CHOOSE US" : "لماذا تختارنا",
+
+    "About_home_text":"انشأت منصة لوجيسل بهدف تقديم تجربه تعلم جديدة ومختلفة في منطقة الشرق الأوسط وشمال إفريقيا. لمساعدة الأفراد والمؤسسات على تعزيز الأداء من خلال حلول التعلم المبتكرة.",
+
+    "Mission_home_text":"خلق فرص تدريبية ذات قيمة مرتفعة يمكن الوصول إليها بسهولة وبأسعار معقولة قدر الإمكان لتعزيز  مهارات الشباب المصري والعربي لتلبية متطلبات التوظيف ، وكذلك لقادة الأعمال لضمان تطوير منحنى التعل الخاص بهم وبمؤسساتهم.",
+
+    "Vision_home_text":"أن تصبح لوجيسل منصة التعلم الإلكتروني الرائدة في منطقة الشرق الأوسط وشمال إفريقيا من حيث القيمة مع سهولة الوصول تكنولوجياً للأفراد والشركات.",
+
+    "Facebook feed" :"موجز الفيسبوك",
+
+    "Approving" : "الموافقة",
+
+    "Approved" : "تم الموافقة",
+
+    "Finish" : "انهاء",
+
+    "rejectedText" :"عفوا لم يتم قبولكم",
+
+    "acceptedAndPayText" :"يجب دفع الرسوم للحصول على الشهادة المعتمدة بعد الانتهاء من اختبار المبادرة عن طريق بطاقة ميزة من البنك الأهلي المصري.",
+
+    "time" :"الوقت",
+
+    "full_namear" :"الإسم رباعي باللغة العربية",
+
+    "full_nameen" :"الإسم رباعي باللغة الإنجليزي",
+
+    "acceptedText_init" : "يرجى العلم انه تم قبولك في مبادرة :name بنجاح ، برجاء الضغط على الإستمرار لبدء تصفح البرامج التدريبية وسوف نعلنكم قريباً عن اتاحة رابط الإختبارات النهائية مع أطيب التمنيات بالتوفيق",
+
+    "pay now" : "افع الان",
+
+    "Agreetoterms" :"اوافق على الشروط والاحكام",
+
+    "exceededattemptsexam" : "لقد تجاوزت عدد المحاولات لهذا الامتحان",
+
+    "doYouWantToFinishExam" :"هل تريد انهاء الامتحان؟",
+
+    "finish exam":"انهاء الامتحان",
+
+    "imageUploadText":"يرجى رفع الصور بحد اقصى 2 ميجا للمساحة و امتداد jpg او png",
+    "Ok":"موافق",
+    "error_login": "خطأ فى عنوان البريد او كلمة المرور",
+    "api_error": "خطأ فى الخادم حاول مرة اخرة فى وقت لاحق",
+
+    
+    "required_form" :"املأ هذا الحقل.",
+
+    "email_form" : "ادخل بريد اللكترونى صحيح.",
+
+    "email_unique_form" :"البريد الالكترونى مسجل من قبل",
+
+    "phone_form" : "ادخل رقم الهاتف مكون من ارقام فقط.",
+
+    "passwordlogin" :"ادخل كلمة المرور الخاصة بك",
+
+    "passwordcurrent" :"ادخل كلمة المرور الحالية",
+
+    "passwordnew" :"كلمة المرور يجب الا تقل عن 8 احرف او ارقام",
+
+    "passwordconfirmation" :"كلمة المرور يجب ان تكون مطابقة لتاكيد كلمة المرور",
+
+    "name_form" :"ادخل اسمك بالكامل",
+
+    "job_form" :"اختر وظيفة",
+
+    "subject" :"ادخل عنوان الرسالة",
+
+    "message" :"اكتب الرسالة",
+
+    "recaptcha" : "خطأ فى recaptcha حاول فى مرة اخرى فى وقت لاحق",
+
+    "national_id_form":"ادخل الرقم القومى 14 رقم",
+
+    "graduation_year_form":"ادخل سنة التخرج مثال: 2020",
+
+    "national_id_required" : "ادخل الرقم القومى",
+
+    "national_id_unique" : "الرقم مسجل من قبل",
+
+    "national_id_digits" : "يجب ادخال 14 رقم",
+
+    "national_id_max" : "خطأ فى الرقم القومى",
+
+    "national_id_age_max" : "السن غير مطابق مع الرقم القومى",
+
+    "national_id_age_min" : " السن غير مطابق مع الرقم القومى",
+
+    "image_form":"تاكد من رفع صورة jpg,png,jpeg",
+
+    "image_mimes":"تاكد من رفع صورة بامتداد jpg,png,jpeg ",
+
+    "image_max":"تاكد ان حجم الصورة لايتجاوز 2 مبجا",
+    "first_name":"الاسم الاول",
+    "last_name":"الاسم الاخير",
+    "unauthorized" :"غير مصرح",
+    "Information":"معلومات",
+    "description":"الوصف",
+    "short_description":"الوصف المختصر",
+    "keywords":"الكلمات المفتحية",
+    "robot":"الروبوت",
+    "translation":"ترجمة",
+    "Are you sure?":"هل انت متاكد؟",
+    "Competitors" :"المنافسون",
+    "Competitor" :"منافس",
+    "Competitions":"مسابقات",
+    "Competition":"مسابقة",
+    "Export to Excel": "تصدير لاكسل",
+    "click here to download the excel file":"اضغط هنا لتحميل ملف اكسل",
+    "Keep me logged in" :"احتفظ بتسجيل الدخول",
+    "Back" :"رجوع",
+    "Show":"عرض",
+    "Policies":"السياسات",
+    "Terms":"الشروط",
+    "barcode" : "الباركود",
+    "stock":"المخزون",
+    "discount_start":"بدأ الخصم",
+    "discount_end":"انتهاء الخصم",
+    "Error":"خطأ"
+   
+  }

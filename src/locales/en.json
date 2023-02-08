@@ -1,0 +1,1031 @@
+{
+  "Menu" : "Menu",
+  "Post" :"Post",
+  "Posts" :"Posts",
+  "Dashboard" : "Dashboard",
+
+  "User Roles & Permissions" : "User Roles & Permissions",
+
+  "Role Permissions" : "Role Permissions",
+
+  "Role" : "Role",
+
+  "Search" : "Search",
+
+ "customers" : "Customers",
+
+ "customer" : "Customer",
+
+ "Product" : "Product",
+
+ "Products" : "Products",
+
+ "Categories" : "Categories",
+
+ "All Customers" : "All Customers",
+
+ "Leads" : "Leads",
+
+ "Clients" : "Clients",
+
+ "Lead" : "Lead",
+
+ "Client" : "Client",
+
+ "My Customers" : "My Customers",
+
+ "My Leads" : "My Leads",
+
+ "My Clients" : "My Clients",
+
+ "Notes" : "Notes",
+
+ "All Notes" : "All Notes",
+
+ "Scheduled Notes" : "Scheduled Notes",
+
+ "My Notes" : "My Notes",
+
+ "My Scheduled Notes" : "My Scheduled Notes",
+
+ "Activities" : "Activities",
+
+ "All Activities" : "All Activities",
+
+ "Open" : "Open",
+
+ "Alert" : "Alert",
+
+ "Priority" : "Priority",
+
+ "Services" : "Services",
+
+ "All Services" : "All Services",
+
+ "Renewal Services" : "Renewal Services",
+
+ "Permanent Services" : "Permanent Services",
+
+ "Waiting Renewal" : "Waiting Renewal",
+
+ "Waiting Validation" : "Waiting Validation",
+
+ "My Services" : "My Services",
+
+ "My Renewal Services" : "My Renewal Services",
+
+ "My Permanent Services" : "My Permanent Services",
+
+ "My Waiting Renewal" : "My Waiting Renewal",
+
+ "My Waiting Validation" : "My Waiting Validation",
+
+ "All Tasks" : "All Tasks",
+
+ "Open Tasks" : "Open Tasks",
+
+ "Scheduled Tasks" : "Scheduled Tasks",
+
+ "Closed Tasks" : "Closed Tasks",
+
+ "Tasks" : "Tasks",
+
+ "Task" : "Task",
+
+ "My Tasks" : "My Tasks",
+
+ "My Open Tasks" : "My Open Tasks",
+
+ "My Scheduled Tasks" : "My Scheduled Tasks",
+
+ "My Closed Tasks" : "My Closed Tasks",
+
+ "Reports" : "Reports",
+
+ "Performance" : "Performance",
+
+ "User Performance" : "User Performance",
+
+ "My Performance" : "My Performance",
+
+ "Setting" : "Setting",
+
+ "Company Info" : "Company Info",
+
+ "Taxes" : "Taxes",
+
+ "Users" : "Users",
+
+ "User Permissions" : "User Permissions",
+
+ "Customer Types" : "Customer Types",
+
+ "Reasons" : "Reasons",
+
+ "Results" : "Results",
+
+ "Interests" : "Interests",
+
+ "Types" : "Types",
+
+ "Reached By" : "Reached By",
+
+ "Currencies" : "Currencies",
+
+ "Countries" : "Countries",
+
+ "States" : "States",
+
+ "Cities" : "Cities",
+
+ "Fields" : "Fields",
+
+
+
+ "Tax" : "Tax",
+
+ "User" : "User",
+
+ "User Permission" : "User Permission",
+
+ "Permission" : "Permission",
+ "Permissions" : "Permissions",
+
+ "Customer Type" : "Customer Type",
+
+ "Reason" : "Reason",
+
+ "Result" : "Result",
+
+ "Interest" : "Interest",
+
+ "Type" : "Type",
+
+ "Currency" : "Currency",
+
+ "Country" : "Country",
+
+ "State" : "State",
+
+ "City" : "City",
+
+ "Field" : "Field",
+
+ "Business Field" : "Business Field",
+
+ "Post Code" : "Post Code",
+
+ "Email" : "Email",
+
+ "Value/Class" : "Value/Class",
+
+ "Website" : "Website",
+
+ "Logo image" : "Logo image",
+
+ "Create" : "Create",
+
+ "Edit" : "Edit",
+
+ "Delete" : "Delete",
+
+ "Save" : "Save",
+
+ "Submit" : "Submit",
+
+ "Note" : "NOTE",
+
+ "Internal Note" : "Internal Note",
+
+ "Close" : "Close",
+
+ "View" : "View",
+
+ "Online" : "Online",
+
+ "Next" : "Next",
+
+ "Pervious" : "Pervious",
+
+ "Account Manager" : "Account Manager",
+
+ "Company" : "Company",
+
+ "Created at" : "Created at",
+
+ "Updated at" : "Updated at",
+
+ "Action" : "Action",
+
+ "Contact" : "Contact",
+
+ "Add" : "Add",
+
+ "Service" : "Service",
+
+ "Yes" : "Yes",
+
+ "No" : "No",
+
+ "Validated" : "Validated",
+
+ "Start Date" : "Start Date",
+
+ "End Date" : "End Date",
+
+ "Date":"Date",
+
+ "Assigned To":"Assigned To",
+
+ "Comment":"Comment",
+
+ "Service History":"Service History",
+
+ "Service Informaton":"Service Informaton",
+
+ "Add by":"Add by",
+
+ "Customer Informaton":"Customer Informaton",
+
+ "Last 7 days":"Last 7 days",
+
+ "Last 30 days":"Last 30 days",
+
+ "Last 3 Months":"Last 3 Months",
+
+ "Last 6 Months":"Last 6 Months",
+
+ "Last 12 Months":"Last 12 Months",
+
+ "Life Time Performance":"Life Time Performance",
+
+ "Description":"Description",
+
+ "Logo":"Logo",
+ "Logo_white":"White Logo",
+ "Logo_black":"Black Logo",
+
+ "Company Information":"Company Information",
+
+ "Customer Information":"Customer Information",
+
+ "Name":"Name",
+ "name":"Name",
+
+ "Percentage":"Percentage",
+
+ "Currency Name":"Currency Name",
+
+ "Unit Name":"Unit Name",
+
+ "Subunit Name":"Subunit Name",
+
+ "Currency Rate":"Currency Rate",
+
+ "Rate":"Rate",
+
+
+
+ "Unit":"Unit",
+
+ "Subunit":"Subunit",
+
+ "Country Name":"Country Name",
+
+ "Code":"Code",
+
+ "Calling Code":"Calling Code",
+
+ "Progress":"Progress",
+
+
+
+ "Login":"Login",
+
+ "Logout":"Logout",
+
+ "Register":"Register",
+
+ "Phone":"Phone",
+
+ "Mobile":"Mobile",
+
+ "Address":"Address",
+
+ "Customer Profile":"Customer Profile",
+
+ "Create Contact":"Create Contact",
+
+ "Edit Customer":"Edit Customer",
+
+ "Image":"Image",
+
+ "Position":"Position",
+
+ "Edit Contact":"Edit Contact",
+
+ "Add Service":"Add Service",
+
+ "Price":"Price",
+
+ "Total":"Total",
+
+
+
+ "Service Details":"Service Details",
+
+ "Validate & Invoice":"Validate & Invoice",
+
+ "Renewal":"Renewal",
+
+ "Print Invoice":"Print Invoice",
+
+ "Edit Service":"Edit Service",
+
+ "Service will be invoiced":"Service will be invoiced and cannot be edited.",
+
+
+
+ "Validate Service":"Validate Service",
+
+ "Validate":"Validate",
+
+
+
+ "Add Note":"Add Note",
+
+ "Mark As Seen":"Mark As Seen",
+
+ "Seen":"Seen",
+
+ "Add Activity":"Add Activity",
+
+ "Edit Activity":"Edit Activity",
+
+ "ID":"ID",
+
+ "Interested in":"Interested in",
+
+ "All Open Activites":"All Open Activites",
+
+ "All Alert Activites":"All Alert Activites",
+
+ "All Priority Activites":"All Priority Activites",
+
+ "Show Activity":"Show Activity",
+
+ "Done":"Done",
+
+ "Mark As Done":"Mark As Done",
+
+
+
+ "Companies":"Companies",
+
+ "Events":"Events",
+
+ "Event":"Event",
+
+ "Category":"Category",
+
+
+
+ "Contact Person":"Contact Person",
+
+ "Owner":"Owner",
+
+ "Tax Number":"Tax Number",
+
+ "Commercial Registry":"Commercial Registry",
+
+ "About":"About Us",
+
+ "contactus":"Contact us",
+
+ "intro":"Intro",
+
+ "Edit About":"Edit About",
+
+ "Edit Intro":"Edit Intro",
+
+ "sliders":"Sliders",
+
+ "Conferance" :"Conferance",
+
+ "Attendants" :"Attendants",
+
+ "Rejected Attendants" : "Rejected Attendants",
+
+ "Adult Number" :"Adult Number",
+
+ "Childern Number" :"Childern Number",
+
+ "Childern Age" :"Childern Age",
+
+ "Arrival Date" :"Arrival Date",
+
+ "Departure Date" :"Departure Date",
+
+ "Flight Details" :"Flight Details",
+
+ "Package" :"Package",
+
+ "Double Room":"Double Room",
+
+ "Single Room":"Single Room",
+
+ "Tickets":"Tickets",
+
+ "Edit Contact Us" : "EDIT CONTACT US",
+
+ "Languages":"Languages",
+
+ "Language":"Language",
+
+
+
+ "Providers":"Providers",
+
+ "Provider":"Provider",
+
+ "our courses" : "our courses",
+
+ "Courses":"Courses",
+
+ "Course":"Course",
+
+ "Short Description":"Short Description",
+
+ "Discount":"Discount",
+
+ "Skills":"Skills",
+
+ "Duration": "Duration",
+
+ "Item_langs" : "Item languages",
+
+ "Item_lang" : "Item language",
+
+ "Video" : "Video",
+
+ "Videos" : "Videos",
+
+ "Sessions" : "Sessions",
+
+ "Session" : "Session",
+
+ "Page" : "Page",
+
+ "Pages" : "Pages",
+
+ "Slider" : "Slider",
+
+ "Sliders" : "Sliders",
+
+ "Navbar" : "Navbar",
+
+ "Follow Me" :"Follow Me",
+
+ "Follow us" :"Follow us",
+
+ "Recent Posts" : "Recent Posts",
+
+ "Get Interesting News" : "Get Interesting News",
+
+ "Older Posts" : "Older Posts",
+
+ "Newer Posts" : "Newer Posts",
+
+ "Personal Blog" : "Personal Blog",
+
+ "Read More" : "Read More",
+
+ "subscribe" : "subscribe",
+
+ "Your email address" : "Your email address",
+
+ "Continue Reading"  : "Continue Reading",
+
+ "YOU MIGHT ALSO LIKE..." : "YOU MIGHT ALSO LIKE...",
+
+ "Subject" : "Subject",
+
+ "Message" : "Message",
+
+ "Thank you I will contact you as soon as possible" : "Thank you I will contact you as soon as possible",
+
+ "Shop" : "Shop",
+
+ "Catalog" : "Catalog",
+
+ "More Services" :"More Services",
+
+ "Customer Service" :  "Customer Service" ,
+
+ "Messages" :"Messages",
+
+ "Home" :"Home",
+
+ "Partners": "Partners",
+
+ "bundles": "Bundles",
+
+ "bundle": "Bundle",
+
+ "High Quality Courses": "Start Learning Now",
+
+ "Save More With Our Bundles" : "Save More With Our Bundles",
+
+ "Start Learning Now" : "Start Learning Now",
+
+ "Beginner": "Beginner",
+
+ "Intermediate": "Intermediate",
+
+ "Advanced": "Advanced",
+
+ "About the Course": "About the Course",
+
+ "Course by" : "Course by",
+
+ "Read full biography" : "Read full biography",
+
+ "Views":"Views",
+
+ "Sales":"Sales",
+
+ "Overview" :"Overview",
+
+ "Buy now and save":"Buy now and save",
+
+ "Buy now":"Buy now",
+
+ "Password":"Password",
+
+ "password_confirmation":"Password Confirmation",
+
+ "Settings":"Settings",
+
+ "My Courses":"My Courses",
+
+ "My Wishlist":"My Wishlist",
+
+ "Wishlist":"Wishlist",
+
+ "Personal Information" : "Personal Information",
+
+ "Account Information" : "Account Information",
+
+ "Current Password" :"Current Password" ,
+
+ "New Password" :"New Password" ,
+
+ "Change" :"Change",
+
+ "Check out" : "Check out",
+
+ "Triple" : "Triple",
+
+ "Cart" : "Cart",
+
+ "Order" : "Order",
+
+ "Orders" : "Orders",
+
+ "My Orders" : "My Orders",
+
+ "Reference Number" : "Reference Number",
+
+ "Payment Status" : "Payment Status",
+
+ "Payment Date" : "Payment Date",
+
+ "Order Number" : "Order Number",
+
+ "Paid" : "Paid",
+
+ "Waiting" : "Waiting",
+
+ "Available Languages" : "Available Languages",
+
+ "Signup" : "Signup",
+
+ "Remember Me" : "Remember Me",
+
+ "View All" :"View All",
+
+ "Share on":"Share on",
+
+ "Now Playing" : "Now Playing",
+
+ "Terms of Use" : "Terms of Use",
+
+ "Privacy Policy" : "Privacy Policy",
+
+ "question" : "question",
+
+ "questions" : "questions",
+
+ "quiz" : "Quiz",
+
+ "quizzes" : "Quizzes",
+
+ "Answer" : "Answer",
+
+ "Answers" : "Answers",
+
+ "Score" : "Score",
+
+ "Scores" : "Scores",
+
+ "Exam" : "Exam",
+
+ "Exams" : "Exams",
+
+ "Start The Exam" : "Start The Exam",
+
+ "Minutes" : "Minutes",
+
+ "You need to buy the course for playing this" : "You need to buy the course for playing this",
+
+ "Reviews" : "Reviews",
+
+ "Leave a Review" : "Leave a Review",
+
+ "review" : "review",
+
+ "Cancel" : "Cancel",
+
+ "Quiz Questions" : "Quiz Questions",
+
+ "Passing Degree" : "Passing Degree",
+
+ "Group" : "Group",
+
+ "Groups" : "Groups",
+
+ "Create Group" : "Create Group",
+
+ "Members" : "Members",
+
+ "Member" : "Member",
+
+ "report" : "report",
+
+ "Active" : "Active",
+
+ "Deactivated" : "Deactivated",
+
+ "Waiting Review" : "Waiting Review",
+
+ "Add Course" :"Add Course",
+
+ "Add Member" : "Add Member",
+
+ "Search results":"Search results",
+
+ "Logicel For Business":"Logicel For Business",
+
+ "Thank you we will contact you as soon as possible" : "Thank you we will contact you as soon as possible",
+
+ "Expired" : "Expired",
+
+ "Cancelled" : "Cancelled",
+
+ "Failed" : "Failed",
+
+ "Created_at":"Created_at",
+
+ "Payment":"Payment",
+
+ "Payments":"Payments",
+
+ "Ready":"Ready",
+
+ "Cycle":"Cycle",
+
+ "Cycles":"Cycles",
+
+
+
+ "Your Score":"Your Score",
+
+
+
+ "Status":"Status",
+
+ "Pass":"Pass",
+
+ "Fail":"Fail",
+
+
+
+ "SUMMARY":"SUMMARY",
+
+ "TOTAL":"TOTAL",
+
+ "EGP":"EGP",
+
+ "rate":"rate",
+
+ "Forget Your Password?" :"Forget Your Password?",
+
+ "Attempt": "Attempt",
+
+ "Cover" : "Cover",
+
+ "exams" : "Exams",
+
+ "next" : "Next",
+
+ "previous" : "Previous",
+
+ "download" : "Download",
+
+ "generate certifcate" : "Generate Certifcate",
+
+ "cantTest" : "You can not take the exam right now, you have to wait: ",
+
+ "days" : "days",
+
+ "slug" :"Slug",
+
+ "Media Library" :"Media Library",
+
+ "promos" :"Promotions",
+
+ "promo" :"Promotion",
+
+ "balance" :"Balance",
+
+ "Date Start" :"Date Start",
+
+ "Date End":"Date End",
+
+ "No data or Promo is expired" :"No data or Promo is expired",
+
+ "You have used a promo on this order" : "You have used a promotion or it does not apply on this order",
+
+ "applied" : "applied",
+
+ "No items found" : "No items found",
+
+ "Data has been updated" : "Data has been updated",
+
+ "Please enter correct current password" : "Please enter correct current password",
+
+ "statusDescription" : "Status Description",
+
+ "info" :"Information",
+
+ "Create New Account" : "Create New Account",
+
+ "passhint" : "At least 8 letters or numbers",
+
+ "Sorting" : "Sorting",
+
+
+
+ "job" : "Job",
+
+ "student" : "Student",
+
+ "graduated" : "Graduated",
+
+ "employee" : "Employee",
+
+ "employer" : "Employer",
+
+ "verify_mail" : "Confirm registration",
+
+ "Hi" : "Hi",
+
+ "thanks" : "Thanks",
+
+ "Your mail is verified" : "Your mail is verified",
+
+ "Your mail is verified, thank you!" : "Your mail is verified, thank you!",
+
+ "No data found!" : "No data found!",
+
+ "Your mail is verified, you need to login" : "Your mail is verified, you need to login",
+
+ "check your mail" : "Check your mail",
+
+ "resend" : "resend",
+
+ "Exercise Folder" : "Exercise Folder",
+
+ "certificates" :"Certificates",
+
+ "certificate" :"Certificate",
+
+ "share" :"Share",
+
+ "uploadImage" : "Drop image or click to upload",
+
+ "commentUnderReview" : "Your comment is under review!",
+
+ "facebookfollow":"Follow us on Facebook",
+
+ "twitterfollow":"Follow us on Twitter",
+
+ "linkedinfollow":"Follow us on Linkedin",
+
+ "instagramfollow":"Follow us on Instagram",
+
+ "youtubefollow":"Follow us on Youtube",
+
+ "Add to cart" : "Add to cart",
+
+ "Remove from cart" : "Remove from cart",
+
+ "Add to wishlist" : "Add to wishlist",
+
+ "Remove from wishlist" : "Remove from wishlist",
+
+ "Play" : "Play",
+
+ "Facebook" : "Facebook",
+
+ "Twitter" : "Twitter",
+
+ "Linkedin" : "Linkedin",
+
+ "LogoutSuccess" :"You have been logged out",
+
+ "LoginSuccess" :"Welcome Back!",
+
+ "Enter promo code" : "Enter promo code",
+
+ "removeConfirmation" :"Do you want to remove it?",
+ "removedSuccess" :"Has been removed successfully",
+ "savedSuccess" :"Has been saved successfully",
+ "initiatives" : "Initiatives",
+
+ "initiative" : "Initiative",
+
+ "payment methods" : "Payment Methods",
+
+ "gender":"Gender",
+
+ "age":"Age",
+
+ "national_id":"National ID",
+
+ "governorate":"Governorate",
+
+ "university":"University",
+
+ "college":"College",
+
+ "graduation_year":"Graduation year",
+
+ "know_about_us":"How did you know about us?",
+
+ "register_for" : "Register for",
+
+ "male" :"Male",
+
+ "female" :"Female",
+
+ "id_copy" :"ID copy front",
+
+ "id_copy2" :"ID copy back",
+
+ "upload" : "Upload",
+
+ "Upload documents" : "Upload documents",
+
+ "uploaddocText" :"Please make sure that the card has been uploaded correctly, and then click on continue so that we can review your data and contact you as soon as possible.",
+
+ "continue" : "Continue",
+
+ 
+ "useful_link" :"Useful Link",
+
+ "vision" : "vision",
+
+ "mission" : "mission",
+
+ "Take a Video Tour" :"Take a Video Tour To Know Us",
+
+ "WHY CHOOSE US" : "WHY CHOOSE US",
+
+ "About_home_text":"Logicel was founded to provide life-transforming learning experiences to learners in the MENA region. Helping individuals & organizations drive performance with innovative learning solutions.",
+
+ "Mission_home_text":"Creating training as accessible, impactful and affordable as possible to boost the caliber of Arab youth to meet employment demands, and for business leaders to ensure the development of their learning curve.",
+
+ "Vision_home_text":"To be the leading e-learning platform in the MENA region in terms of wide accessibility, technology, for individuals and corporates.",
+
+ "Facebook feed" :"Facebook feed",
+
+ "Approving" : "Approving",
+
+ "Approved" : "Approved",
+
+  "Finish" : "Finish",
+
+
+
+"rejectedText" :"Sorry, You are not accepted!",
+
+"acceptedAndPayText" :"The fees must be paid to obtain the approved certificate after the completion of the initiative examination via Meeza card from National Bank of Egypt.",
+
+
+
+"time" :"Time",
+
+"full_namear" :"Full Name in Arabic",
+
+"full_nameen" :"Full Name in English",
+
+
+"pay now" : "Pay now",
+
+"Agreetoterms" :"I agree to the terms and conditions",
+
+"exceededattemptsexam" :"You have exceeded the number of attempts for this exam",
+
+"doYouWantToFinishExam" :"Do you want to finish the exam?",
+
+"finish exam":"Finish Exam",
+
+"imageUploadText":"Please upload photos with a maximum of 2 megabytes of space and a jpg or png extension.",
+
+"Ok":"Ok",
+"error_login": "Incorrect email or password",
+"api_error": "Error in server, try again later",
+
+"required_form" :"Please fill out this field",
+
+"email_form" :"Please enter a correct email address.",
+
+"email_unique_form" :"Email has been already taken!",
+
+"phone_form" : "Please enter the phone number contains numbers only .",
+
+"passwordlogin" :"Please enter your password.",
+
+"passwordcurrent" :"Please enter your current password.",
+
+"passwordnew" :"Password must be at least 8 characters or numbers.",
+
+"passwordconfirmation" :"Password must match the password confirmation.",
+
+"name_form" :"Please enter your full name",
+
+"job_form" :"Please select a job title",
+
+"subject" :"Please enter subject",
+
+"message" :"Write your message",
+
+"recaptcha" : "Recaptcha error, please try again later!",
+
+"national_id_form":"Enter your national ID 14 Digits",
+
+"graduation_year_form":"Enter your graduation your ex: 2020",
+
+"national_id_unique" : "The number is already registered",
+
+"national_id_digits" : "You must enter 14 numbers",
+
+"national_id.max" : "ًWrong national ID number",
+
+"national_id_age_max" : "Age does not match the national ID number",
+
+"national_id_age_min" : "Age does not match the national ID number",
+
+"image_form":"Please upload image jpg,png,jpeg",
+
+"image_mimes":"Please upload jpg,png,jpeg image",
+
+"image_max":"Make sure the image is not bigger than 2 MB",
+"first_name":"First Name",
+"last_name":"Last Name",
+"unauthorized" :"Unauthorized",
+"Information":"Information",
+"short_description":"Short description",
+"keywords":"Keywords",
+"robot":"robot",
+"translation":"Translation",
+"Are you sure?":"Are you sure?",
+"Competitors" :"Competitors",
+"Competitor" :"Competitor",
+"Competitions":"Competitions",
+"Competition":"Competition",
+"Export to Excel": "Export to Excel",
+"click here to download the excel file":"click here to download the excel file",
+"Keep me logged in" :"Keep me logged in",
+"Back" :"Back",
+"Show":"Show",
+"Policies":"Policies",
+"Terms":"Terms",
+"barcode" : "Barcode",
+"stock":"Stock",
+"discount_start":"Discount start",
+"discount_end":"Discount end",
+"Error":"Error"
+
+}

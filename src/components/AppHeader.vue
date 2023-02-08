@@ -1,4 +1,5 @@
 <template>
+  <!-- eslint-disable -->
   <CHeader position="sticky" class="mb-4">
     <CContainer fluid>
       <CHeaderToggler class="ps-1" @click="$store.commit('toggleSidebar')">
@@ -15,10 +16,16 @@
           <CNavLink href="#">Users</CNavLink>
         </CNavItem>
         <CNavItem>
-          <CNavLink href="#">Settings</CNavLink>
+          <CNavLink href="#">{{$t('Settings')}} + {{ $i18n.locale }}</CNavLink>
         </CNavItem>
+        <LanguageSwitcher/>
       </CHeaderNav>
       <CHeaderNav>
+        <CNavItem>
+          <CNavLink href="#">
+            <CIcon class="mx-2" icon="cil-bell" size="lg" />
+          </CNavLink>
+        </CNavItem>
         <CNavItem>
           <CNavLink href="#">
             <CIcon class="mx-2" icon="cil-bell" size="lg" />
@@ -45,14 +52,17 @@
 </template>
 
 <script>
+/* eslint-disable */ 
 import AppBreadcrumb from './AppBreadcrumb'
 import AppHeaderDropdownAccnt from './AppHeaderDropdownAccnt'
+import LanguageSwitcher from './LanguageSwitcher'
 import { logo } from '@/assets/brand/logo'
 export default {
   name: 'AppHeader',
   components: {
     AppBreadcrumb,
     AppHeaderDropdownAccnt,
+    LanguageSwitcher,
   },
   setup() {
     return {

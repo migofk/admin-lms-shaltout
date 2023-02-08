@@ -6,6 +6,11 @@ export default createStore({
     token:'',
     name:'',
     backendUrl: process.env.VUE_APP_BACKEND_URL,
+
+    languages:['ar','en'],
+    localDirs:{ar:'rtl',en:'ltr'},
+    localLang:'en',
+    localDir:'ltr',
     
     //theme settings
     sidebarVisible: '',
@@ -32,10 +37,20 @@ export default createStore({
          if(localStorage.getItem('image')){
           state.image = localStorage.getItem('image');
          }
+         if(localStorage.getItem('localLang')){
+          state.localLang = localStorage.getItem('localLang') 
+          state.localDir = state.localDirs[state.localLang]
+         }
          if(state.token == ""){
            return false;
          }
          return true;
+    },
+    saveLocalization(state,localLang) {
+      localStorage.setItem('localLang', localLang);
+      state.localLang = localLang;
+      state.localDir = state.localDirs[localLang];
+      $i18n.locale = state.localLang
     },
     saveLogin(state,LoginData){
       state.token =LoginData.token;
