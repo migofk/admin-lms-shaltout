@@ -312,10 +312,34 @@ const routes = [
           },
         ],
       },
-    ],
+ 
+  {
+    path: '/about',
+    name: 'About',
+    component: () => import('@/views/pages/About'),
   },
-
-  
+  {
+    path: '/terms',
+    name: 'Term',
+    component: () => import('@/views/pages/Term'),
+  },
+  {
+    path: '/policy',
+    name: 'Policy',
+    component: () => import('@/views/pages/Policy'),
+  },
+  {
+    path: '/info',
+    name: 'Info',
+    component: () => import('@/views/pages/Info'),
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: () => import('@/views/pages/Contact'),
+  },
+],
+}, 
   {
     path: '/auth',
     redirect: '/pages/404',

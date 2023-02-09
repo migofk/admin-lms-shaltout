@@ -19,7 +19,7 @@
         <CCol :md="12">
             <CCard class="mb-4">
                 <CCardHeader>
-                    <strong> {{$t('Add')+ ' ' + $t('Product') }} </strong>
+                    <strong> {{$t('Add')+ ' ' + $t('Information') }} </strong>
                 </CCardHeader>
                 <CCardBody> 
                     <CAlert color="danger" :visible="ShowError" dismissible @close="() => { ShowError = false }">
@@ -34,59 +34,86 @@
                             feedback="Please provide a valid name."
                             :invalid="v$.form.name.$error"
                         />
-                        <CFormInput
-                            type="text"
-                            :label="$t('Slug')+'*'"
-                            v-model.trim="form.slug"
-                            @input="setTouched('slug')"
-                            feedback="Please provide a valid slug."
-                            :invalid="v$.form.slug.$error"
-                        />
-                        <div v-if="errorsBack.slug">
-                            <div class="text-danger small pt-1" v-for="backError in errorsBack.slug" :key="backError"> {{backError}} </div>
-                        </div>
-                        <div class="my-3" v-if="showSharedInputs">
-                        <CFormLabel for="exampleFormControlInput1">{{ $t('Categories') }}*</CFormLabel>
-                        <multiselect
-                          :input="setTouched('cate_selected')"
-                          v-model="cate_selected"
-                          :options="cate_options"
-                          :multiple="true"
-                          :close-on-select="true"
-                          label="label"
-                          track-by="value"
-                          feedback="Please provide a valid name."
-                        >
-                        </multiselect>
-                        <div class="text-danger small pt-1" v-if="v$.cate_selected.$error"> Please select a category. </div>
-                        </div>
-                        <CFormSelect
-                          :label="$t('Status')+'*'"
-                          v-model="form.status"
-                          @input="setTouched('status')"
-                          feedback="Please select a valid status."
-                          :invalid="v$.form.status.$error"
-                          :options="statuses">
-                        </CFormSelect>
-                        <div  v-if="!previewImage" class="my-3">
+                        <!-- -->
+                        <div v-if="showSharedInputs">
+                       <div  v-if="!previewlogo" class="my-3">
                         <CFormInput 
-                          :label="$t('Image')"
+                          :label="$t('Logo')"
                           type="file" 
-                          @change="onFileChange" 
-                          id="AddProduct_formFile" 
+                          @change="onFileChange($event,'logo')"
+                          id="editinfo_formFile1" 
                           accept="image/jpeg, image/png, image/gif,image/webp"
                         />
                       </div>
                       <div class="my-3" v-else>
                           <br/>
-                          <img :src="previewImage" style="max-height: 200px;"  class="img-fluid"/> 
+                            <img :src="previewlogo" style="max-height: 200px;"  class="img-fluid"/> 
                           <br/>
-                          <CButton color="primary" @click="removeImage">X</CButton>
-                          <div v-if="errorsBack.image">
-                          <div class="text-danger small pt-1" v-for="backError in errorsBack.image" :key="backError"> {{backError}} </div>
+                          <CButton color="primary" @click="removeImage('logo')">X</CButton>
+                          <div v-if="errorsBack.logo">
+                            <div class="text-danger small pt-1" v-for="backError in errorsBack.logo" :key="backError"> {{backError}} </div>
                           </div>
                       </div>
-              
+                       <!-- -->
+                      <div  v-if="!previewlogo_white" class="my-3">
+                        <CFormInput 
+                          :label="$t('logo_white')"
+                          type="file" 
+                          @change="onFileChange($event,'logo_white')"
+                          id="editinfo_formFile2" 
+                          accept="image/jpeg, image/png, image/gif,image/webp"
+                        />
+                      </div>
+                      <div class="my-3" v-else>
+                          <br/>
+                            <img :src="previewlogo_white" style="max-height: 200px;"  class="img-fluid"/> 
+                          <br/>
+                          <CButton color="primary" @click="removeImage('logo_white')">X</CButton>
+                          <div v-if="errorsBack.logo_white">
+                            <div class="text-danger small pt-1" v-for="backError in errorsBack.logo_white" :key="backError"> {{backError}} </div>
+                          </div>
+                      </div>
+                       <!-- -->
+                       <div  v-if="!previewlogo_black" class="my-3">
+                        <CFormInput 
+                          :label="$t('logo_black')"
+                          type="file" 
+                          @change="onFileChange($event,'logo_black')"
+                          id="editinfo_formFile3" 
+                          accept="image/jpeg, image/png, image/gif,image/webp"
+                        />
+                      </div>
+                      <div class="my-3" v-else>
+                          <br/>
+                            <img :src="previewlogo_black" style="max-height: 200px;"  class="img-fluid"/> 
+                          <br/>
+                          <CButton color="primary" @click="removeImage('logo_black')">X</CButton>
+                          <div v-if="errorsBack.logo_black">
+                            <div class="text-danger small pt-1" v-for="backError in errorsBack.logo_black" :key="backError"> {{backError}} </div>
+                          </div>
+                      </div>
+                     <!-- -->
+                      <!-- -->
+                      <div  v-if="!previewfavicon" class="my-3">
+                        <CFormInput 
+                          :label="$t('favicon')"
+                          type="file" 
+                          @change="onFileChange($event,'favicon')"
+                          id="editinfo_formFile4" 
+                          accept="image/jpeg, image/png, image/gif,image/webp"
+                        />
+                      </div>
+                      <div class="my-3" v-else>
+                          <br/>
+                            <img :src="previewfavicon" style="max-height: 200px;"  class="img-fluid"/> 
+                          <br/>
+                          <CButton color="primary" @click="removeImage('favicon')">X</CButton>
+                          <div v-if="errorsBack.favicon">
+                            <div class="text-danger small pt-1" v-for="backError in errorsBack.favicon" :key="backError"> {{backError}} </div>
+                          </div>
+                      </div>
+                    </div>
+                     <!-- -->
                         <div class="my-3">
                         <CFormInput
                             type="text"
@@ -107,55 +134,13 @@
                             :invalid="v$.form.keywords.$error"
                         />
                       </div>
-<div class="col-md-6 mt-3" v-if="showSharedInputs">
-   <div class="mb-3">
-    <label for="editporduct_price" class="form-label">{{$t('Price')}}</label>
-    <input v-model.trim="form.price"  type="text"  class="form-control" id="editporduct_price" :class="{ 'is-invalid': errorsBack.price}" >
-      <div v-if="errorsBack.price">
-    <div class="text-danger small pt-1" v-for="backError in errorsBack.price" :key="backError"> {{backError}} </div>
-     </div>
-     </div>
-</div>
-  <!-- input ************-->
 
-  <!-- input ************-->
 
-<div class="col-md-6 mt-3" v-if="showSharedInputs">
-   <div class="mb-3">
-    <label for="editporduct_discount" class="form-label">{{$t('Discount')}}</label>
-    <input v-model.trim="form.discount"  type="text"  class="form-control" id="editporduct_discount" :class="{ 'is-invalid': errorsBack.discount}" >
-      <div v-if="errorsBack.discount">
-    <div class="text-danger small pt-1" v-for="backError in errorsBack.discount" :key="backError"> {{backError}} </div>
-     </div>
-     </div>
-</div>
 
-  <!-- input ************-->
 
-<div class="col-md-6 mt-3" v-if="showSharedInputs">
-   <div class="mb-3">
-    <label for="editporduct_discount_start" class="form-label">{{$t('discount_start')}}</label>
-    <input v-model.trim="form.discount_start"  type="datetime-local"  class="form-control" id="editporduct_discount" :class="{ 'is-invalid': errorsBack.discount_start}" >
-      <div v-if="errorsBack.discount_start">
-    <div class="text-danger small pt-1" v-for="backError in errorsBack.discount_start" :key="backError"> {{backError}} </div>
-     </div>
-     </div>
-</div>
-  <!-- input ************-->
-
-<div class="col-md-6 mt-3" v-if="showSharedInputs">
-   <div class="mb-3">
-    <label for="editporduct_discount_end" class="form-label">{{$t('discount_end')}}</label>
-    <input v-model.trim="form.discount_end"  type="datetime-local"  class="form-control" id="editporduct_discount_end" :class="{ 'is-invalid': errorsBack.discount_end}" >
-      <div v-if="errorsBack.discount_end">
-       <div class="text-danger small pt-1" v-for="backError in errorsBack.discount_end" :key="backError"> {{backError}} </div>
-     </div>
-     </div>
-</div>
-<!-- input -->
  <!-- input -->
  <CCol :md="12"> 
-  <CFormLabel for="AddProduct_description">{{ $t('Decription') }}*</CFormLabel>
+  <CFormLabel for="AddInfo_description">{{ $t('Decription') }}*</CFormLabel>
   <div dir="ltr" class="bg-white">
  <QuillEditor  toolbar="full" theme="snow" v-model:content="form.description" contentType="html" />
   </div>
@@ -163,17 +148,11 @@
     <div class="text-danger small pt-1" v-for="backError in errorsBack.description" :key="backError"> {{backError}} </div>
      </div>
   </CCol> 
-
 <!-- input -->
                         <SubmitButton
                             class="mt-3"
                             :title="$t('Save')"
                             :isSendingForm="isSendingForm"
-                        />
-                        <DeleteButton
-                            class="mt-3 mx-2"
-                            :url="'/admin/product/'+this.main_id"
-                            redirectTo="Products"
                         />
                     </CForm> 
                 </CCardBody>
@@ -187,12 +166,8 @@ import axios from 'axios'
 import useVuelidate from '@vuelidate/core'
 import { required, maxLength } from '@vuelidate/validators'
 import SubmitButton from '@/components/SubmitButton.vue'
-import DeleteButton from '@/components/DeleteButton.vue'
-import Multiselect from 'vue-multiselect'
-import {fixingOptions} from '../../commen/fixingSelectOption'
 import { QuillEditor } from '@vueup/vue-quill'
 import '@vueup/vue-quill/dist/vue-quill.snow.css';
-import moment from 'moment';
 import { toast } from 'vue3-toastify';
 import 'vue3-toastify/dist/index.css';
 export default {
@@ -200,15 +175,16 @@ setup() {
 return { v$: useVuelidate() }
 },
 name: 'ForgetPassword',
-components: { SubmitButton, Multiselect, QuillEditor,DeleteButton },
+components: { SubmitButton, QuillEditor,},
 data() {
 return {
     form: {
     name: '',
     lang_id:null,
-    status:null,
-    slug :null,
-    image:null,
+    logo:null,
+    logo_white:null,
+    logo_black:null,
+    favicon:null,
     short_decription:null,
     keywords:null,
     robot:null,
@@ -221,13 +197,14 @@ return {
                 { label: 'deactivated', value: 'deactivated' },
                 { label: 'waiting review', value: 'waiting review' },
             ],
-    categories:[],
-    cate_selected:null,
-    cate_options:[],
     previewImage:null,
     ref_id: null,
-    main_id:null,
+    main_id:'',
     translations :[],
+    previewlogo:null,
+    previewlogo_white:null,
+    previewlogo_black:null,
+    previewfavicon:null,
     errorsBack:{},
     errorMgs: '',
     ShowError: false,
@@ -242,12 +219,6 @@ return {
     name: {
         required,
     },
-    status: {
-        required,
-    },
-    slug: {
-        required,
-    },
     short_decription: {
         required,
         maxLength: maxLength(350),
@@ -257,15 +228,11 @@ return {
         maxLength: maxLength(350),
     },
     },
-    cate_selected: {
-        required,
-    },
 }
 },
 methods: {
     fillForm(Thedata){
     this.form.name = Thedata.name;
-    this.form.status = Thedata.status;
     this.main_id= Thedata.id;
     this.form.lang_id= Thedata.lang_id;
     this.ref_id= Thedata.ref_id;
@@ -274,18 +241,17 @@ methods: {
     this.form.description = Thedata.description;
     this.form.alt_image = Thedata.alt_image;
     this.previewImage = Thedata.image;
-    this.form.slug = Thedata.slug;
-    this.form.parent_id = Thedata.parent_id;
-    this.form.price = Thedata.price;
-    this.form.discount = Thedata.discount;
-    this.form.discount_start = Thedata.discount_start;
-    this.form.discount_end = Thedata.discount_end;
-    this.previewGallery = Thedata.gallery;
+    this.previewlogo = Thedata.logo;
+    this.previewlogo_white = Thedata.logo_white;
+    this.previewlogo_black = Thedata.logo_black;
+    this.previewfavicon = Thedata.favicon;
     this.form.lang_id == this.$store.state.localLang? this.showSharedInputs = true : this.showSharedInputs = false
     },
     getCreateData(){
+        let query = ''
+        this.main_id? query = '?id='+this.main_id :  query = ''
         axios
-        .get(this.$store.state.backendUrl+'/admin/product/'+this.main_id+'/edit' , {
+        .get(this.$store.state.backendUrl+'/admin/info_edit'+query  , {
             headers: {
                 'Authorization': 'Bearer ' + this.$store.state.token,
                 "Content-Type": "application/json",
@@ -297,11 +263,9 @@ methods: {
                 this.ShowError=true;
             }
             else{
-            this.translations = response.data.product.translations;
-            this.cate_options = fixingOptions (response.data.categories.data,'name','ref_id');
-            this.cate_selected = fixingOptions (response.data.product.categories,'name','ref_id');
-            this.products = response.data.product.data;
-                this.fillForm(response.data.product);
+            this.translations = response.data.data.translations;
+            this.infos = response.data.data;
+                this.fillForm(response.data.data);
                 this.showForm=true;
             }
         })
@@ -314,23 +278,13 @@ methods: {
     } , 
     setTouched(theModel) {
         if (theModel === 'name' || theModel === 'all') {
-            this.sanitizeTitle();
             this.v$.form.name.$touch()
-        }
-        if (theModel === 'status' || theModel === 'all') {
-            this.v$.form.status.$touch()
-        }
-        if (theModel === 'cate_selected' || theModel === 'all') {
-            this.v$.cate_selected.$touch()
         }
         if (theModel === 'short_decription' || theModel === 'all') {
             this.v$.form.short_decription.$touch()
         }
         if (theModel === 'keywords' || theModel === 'all') {
             this.v$.form.keywords.$touch()
-        }
-        if (theModel === 'slug' || theModel === 'all') {
-            this.v$.form.slug.$touch()
         }
     },
     getTranslation(lang_id){
@@ -345,8 +299,6 @@ methods: {
                 break;
             }
         }
-
-
         if(toEdit){
             this.main_id = editId;
             this.showForm = false,
@@ -354,7 +306,7 @@ methods: {
             this.getCreateData();
         
         }else{
-            this.$router.push({ name: 'Add Product', query: { lang_id: lang_id,ref_id:this.ref_id }});
+            this.$router.push({ name: 'Info', query: { lang_id: lang_id,id:editId,ref_id:this.ref_id }});
         }
     },
     onSubmit(event) {
@@ -363,24 +315,14 @@ methods: {
         if (!this.v$.$invalid) {
         this.isSendingForm = true
         const formData = new FormData();
-        if(this.showSharedInputs){
-        for( let value of this.cate_selected){
-            formData.append('categories[]',value.value)
-        }
-        }
         for (let [key, value] of Object.entries(this.form)) {
             if(value != null){
-                if(this.showSharedInputs){
-                if(key == 'discount_end' || key == 'discount_start'){
-                    value = moment(value).format("Y-MM-DD H:mm:ss")
-                }
-                }
                 formData.append(key,value)
             }
         }
         axios
             .post(
-            this.$store.state.backendUrl + '/admin/product/'+this.main_id+'?_method=PUT',
+            this.$store.state.backendUrl + '/admin/info_update/'+this.main_id,
             formData,
             { headers: { 
                 'Authorization': 'Bearer ' + this.$store.state.token, 
@@ -393,7 +335,7 @@ methods: {
             })
             console.log(response)
             this.$router.push({
-                name: 'Edit Product',
+                name: 'Info',
                 params: { id: response.data.data.id },
             })
             this.isSendingForm = false
@@ -415,9 +357,8 @@ methods: {
     
     this.form.name = null,
     this.form.short_decription = null,
-        this.form.keywords = null,
+    this.form.keywords = null,
     this.form.robot = null,
-    this.form.status = null,
     this.form.image = null,
     this.form.description = null,
     this.previewImage= "",
@@ -431,42 +372,73 @@ methods: {
         this.show = true
     })
     },
-    sanitizeTitle: function() {
-    var slug = "";
-    // Change to lower case
-    var titleLower = this.form.name.toLowerCase();
-    // Trim the last whitespace
-    slug = titleLower.replace(/\s*$/g, '');
-    // Change whitespace to "-"
-    slug = slug.replace(/\s+/g, '-');
-    this.form.slug =slug;
-    return slug;
-
-},
-onFileChange(e) {
+    onFileChange(e,image) {
+        console.log(image)
       var files = e.target.files ;
       if (!files.length)
         return;
-       this.form.image = files[0];
-       this.createImage(files[0]);
-    },
-    createImage(file) {
+        if(image == "logo"){
+       this.form.logo = files[0];
+       this.createImage(files[0],"logo");
+        }
+        if(image == "logo_white"){
+       this.form.logo_white = files[0];
+       this.createImage(files[0],"logo_white");
+        }
+        if(image == "logo_black"){
+       this.form.logo_black = files[0];
+       this.createImage(files[0],"logo_black");
+        }
+        if(image == "favicon"){
+       this.form.favicon = files[0];
+       this.createImage(files[0],"favicon");
+        }
+      },
+      createImage(file,image) {
      // var image = new Image();
       var reader = new FileReader();
       var vm = this;
 
       reader.onload = (e) => {
-        vm.previewImage = e.target.result;
+        if(image == "logo"){
+       vm.previewlogo = e.target.result;
+        }
+        if(image == "logo_white"){
+        vm.previewlogo_white = e.target.result;
+        }
+        if(image == "logo_black"){
+        vm.previewlogo_black = e.target.result;
+        }
+        if(image == "favicon"){
+        vm.previewfavicon = e.target.result;
+        }
+       
       };
       reader.readAsDataURL(file);
     },
-    removeImage () {
-      this.previewImage = '';
-      this.form.image = '';
+    removeImage (image) {
+      if(image == "logo"){
+      this.previewlogo = ''
+      this.form.logo = ''
+      }
+      if(image == "logo_white"){
+      this.previewlogo_white = ''
+      this.form.logo_white = ''
+      }
+      if(image == "logo_black"){
+      this.previewlogo_black = ''
+      this.form.logo_black = ''
+      }
+      if(image == "favicon"){
+      this.previewfavicon = ''
+      this.form.favicon = ''
+      }
     },
 },
 mounted() {
-    this.main_id = this.$route.params.id;
+    if(this.$route.query.id){
+        this.main_id = this.$route.query.id;
+    }
     this.getCreateData();
 }
 }

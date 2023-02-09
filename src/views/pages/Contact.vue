@@ -19,7 +19,7 @@
         <CCol :md="12">
             <CCard class="mb-4">
                 <CCardHeader>
-                    <strong> {{$t('Add')+ ' ' + $t('Product') }} </strong>
+                    <strong> {{$t('Add')+ ' ' + $t('Contact') }} </strong>
                 </CCardHeader>
                 <CCardBody> 
                     <CAlert color="danger" :visible="ShowError" dismissible @close="() => { ShowError = false }">
@@ -34,46 +34,13 @@
                             feedback="Please provide a valid name."
                             :invalid="v$.form.name.$error"
                         />
-                        <CFormInput
-                            type="text"
-                            :label="$t('Slug')+'*'"
-                            v-model.trim="form.slug"
-                            @input="setTouched('slug')"
-                            feedback="Please provide a valid slug."
-                            :invalid="v$.form.slug.$error"
-                        />
-                        <div v-if="errorsBack.slug">
-                            <div class="text-danger small pt-1" v-for="backError in errorsBack.slug" :key="backError"> {{backError}} </div>
-                        </div>
-                        <div class="my-3" v-if="showSharedInputs">
-                        <CFormLabel for="exampleFormControlInput1">{{ $t('Categories') }}*</CFormLabel>
-                        <multiselect
-                          :input="setTouched('cate_selected')"
-                          v-model="cate_selected"
-                          :options="cate_options"
-                          :multiple="true"
-                          :close-on-select="true"
-                          label="label"
-                          track-by="value"
-                          feedback="Please provide a valid name."
-                        >
-                        </multiselect>
-                        <div class="text-danger small pt-1" v-if="v$.cate_selected.$error"> Please select a category. </div>
-                        </div>
-                        <CFormSelect
-                          :label="$t('Status')+'*'"
-                          v-model="form.status"
-                          @input="setTouched('status')"
-                          feedback="Please select a valid status."
-                          :invalid="v$.form.status.$error"
-                          :options="statuses">
-                        </CFormSelect>
+
                         <div  v-if="!previewImage" class="my-3">
                         <CFormInput 
                           :label="$t('Image')"
                           type="file" 
                           @change="onFileChange" 
-                          id="AddProduct_formFile" 
+                          id="AddContact_formFile" 
                           accept="image/jpeg, image/png, image/gif,image/webp"
                         />
                       </div>
@@ -97,65 +64,145 @@
                             :invalid="v$.form.short_decription.$error"
                         />
                       </div>
-                        <div class="my-3">
-                        <CFormInput
-                            type="text"
-                            :label="$t('keywords')+'*'"
-                            v-model.trim="form.keywords"
-                            @input="setTouched('keywords')"
-                            feedback="Please maximum 1."
-                            :invalid="v$.form.keywords.$error"
-                        />
-                      </div>
-<div class="col-md-6 mt-3" v-if="showSharedInputs">
-   <div class="mb-3">
-    <label for="editporduct_price" class="form-label">{{$t('Price')}}</label>
-    <input v-model.trim="form.price"  type="text"  class="form-control" id="editporduct_price" :class="{ 'is-invalid': errorsBack.price}" >
-      <div v-if="errorsBack.price">
-    <div class="text-danger small pt-1" v-for="backError in errorsBack.price" :key="backError"> {{backError}} </div>
-     </div>
-     </div>
-</div>
-  <!-- input ************-->
+                    <div class="my-3">
+                    <CFormInput
+                        type="text"
+                        :label="$t('keywords')+'*'"
+                        v-model.trim="form.keywords"
+                        @input="setTouched('keywords')"
+                        feedback="Please maximum 1."
+                        :invalid="v$.form.keywords.$error"
+                    />
+                    </div>
+                    <!-- input -->
+                    <div class="my-3">
+                    <CFormInput
+                        type="text"
+                        :label="$t('address')"
+                        v-model.trim="form.address"
+                    />
+                    <div v-if="errorsBack.address">
+                        <div class="text-danger small pt-1" v-for="backError in errorsBack.address" :key="backError"> {{backError}} </div>
+                    </div>
+                    </div>
+                    <div v-if="showSharedInputs">
+                    <!-- input -->
+                    <div class="my-3">
+                    <CFormInput
+                        type="text"
+                        :label="$t('email')"
+                        v-model.trim="form.email"
+                    />
+                    <div v-if="errorsBack.email">
+                        <div class="text-danger small pt-1" v-for="backError in errorsBack.email" :key="backError"> {{backError}} </div>
+                    </div>
+                    </div>
+                    <!-- input -->
+                    <div class="my-3">
+                    <CFormInput
+                        type="text"
+                        :label="$t('phone')"
+                        v-model.trim="form.phone"
+                    />
+                    <div v-if="errorsBack.phone">
+                        <div class="text-danger small pt-1" v-for="backError in errorsBack.phone" :key="backError"> {{backError}} </div>
+                    </div>
+                    </div>
+                    <!-- input -->
+                    <div class="my-3">
+                    <CFormInput
+                        type="text"
+                        :label="$t('phone2')"
+                        v-model.trim="form.phone2"
+                    />
+                    <div v-if="errorsBack.phone2">
+                        <div class="text-danger small pt-1" v-for="backError in errorsBack.phone2" :key="backError"> {{backError}} </div>
+                    </div>
+                    </div>
+                    <!-- input -->
+                    <div class="my-3">
+                    <CFormInput
+                        type="text"
+                        :label="$t('facebook')"
+                        v-model.trim="form.facebook"
+                    />
+                    <div v-if="errorsBack.facebook">
+                        <div class="text-danger small pt-1" v-for="backError in errorsBack.facebook" :key="backError"> {{backError}} </div>
+                    </div>
+                    </div>
+                    <!-- input -->
+                    <div class="my-3">
+                    <CFormInput
+                        type="text"
+                        :label="$t('twitter')"
+                        v-model.trim="form.twitter"
+                    />
+                    <div v-if="errorsBack.twitter">
+                        <div class="text-danger small pt-1" v-for="backError in errorsBack.twitter" :key="backError"> {{backError}} </div>
+                    </div>
+                    </div>
+                    <!-- input -->
+                    <div class="my-3">
+                    <CFormInput
+                        type="text"
+                        :label="$t('linkedin')"
+                        v-model.trim="form.linkedin"
+                    />
+                    <div v-if="errorsBack.linkedin">
+                        <div class="text-danger small pt-1" v-for="backError in errorsBack.linkedin" :key="backError"> {{backError}} </div>
+                    </div>
+                    </div>
+                    <!-- input -->
+                    <div class="my-3">
+                    <CFormInput
+                        type="text"
+                        :label="$t('instagram')"
+                        v-model.trim="form.instagram"
+                    />
+                    <div v-if="errorsBack.instagram">
+                        <div class="text-danger small pt-1" v-for="backError in errorsBack.instagram" :key="backError"> {{backError}} </div>
+                    </div>
+                    </div>
+                    <!-- input -->
+                    <div class="my-3">
+                    <CFormInput
+                        type="text"
+                        :label="$t('youtube')"
+                        v-model.trim="form.youtube"
+                    />
+                    <div v-if="errorsBack.youtube">
+                        <div class="text-danger small pt-1" v-for="backError in errorsBack.youtube" :key="backError"> {{backError}} </div>
+                    </div>
+                    </div>
+                    <!-- input -->
+                    <div class="my-3">
+                    <CFormInput
+                        type="text"
+                        :label="$t('google_maps')"
+                        v-model.trim="form.google_maps"
+                    />
+                    <div v-if="errorsBack.google_maps">
+                        <div class="text-danger small pt-1" v-for="backError in errorsBack.google_maps" :key="backError"> {{backError}} </div>
+                    </div>
+                    </div>
+                     <!-- input -->
+                     <div class="my-3">
+                    <CFormInput
+                        type="text"
+                        :label="$t('pinterest')"
+                        v-model.trim="form.pinterest"
+                    />
+                    <div v-if="errorsBack.pinterest">
+                        <div class="text-danger small pt-1" v-for="backError in errorsBack.pinterest" :key="backError"> {{backError}} </div>
+                    </div>
+                    </div>
+                </div>
 
-  <!-- input ************-->
 
-<div class="col-md-6 mt-3" v-if="showSharedInputs">
-   <div class="mb-3">
-    <label for="editporduct_discount" class="form-label">{{$t('Discount')}}</label>
-    <input v-model.trim="form.discount"  type="text"  class="form-control" id="editporduct_discount" :class="{ 'is-invalid': errorsBack.discount}" >
-      <div v-if="errorsBack.discount">
-    <div class="text-danger small pt-1" v-for="backError in errorsBack.discount" :key="backError"> {{backError}} </div>
-     </div>
-     </div>
-</div>
 
-  <!-- input ************-->
-
-<div class="col-md-6 mt-3" v-if="showSharedInputs">
-   <div class="mb-3">
-    <label for="editporduct_discount_start" class="form-label">{{$t('discount_start')}}</label>
-    <input v-model.trim="form.discount_start"  type="datetime-local"  class="form-control" id="editporduct_discount" :class="{ 'is-invalid': errorsBack.discount_start}" >
-      <div v-if="errorsBack.discount_start">
-    <div class="text-danger small pt-1" v-for="backError in errorsBack.discount_start" :key="backError"> {{backError}} </div>
-     </div>
-     </div>
-</div>
-  <!-- input ************-->
-
-<div class="col-md-6 mt-3" v-if="showSharedInputs">
-   <div class="mb-3">
-    <label for="editporduct_discount_end" class="form-label">{{$t('discount_end')}}</label>
-    <input v-model.trim="form.discount_end"  type="datetime-local"  class="form-control" id="editporduct_discount_end" :class="{ 'is-invalid': errorsBack.discount_end}" >
-      <div v-if="errorsBack.discount_end">
-       <div class="text-danger small pt-1" v-for="backError in errorsBack.discount_end" :key="backError"> {{backError}} </div>
-     </div>
-     </div>
-</div>
-<!-- input -->
  <!-- input -->
  <CCol :md="12"> 
-  <CFormLabel for="AddProduct_description">{{ $t('Decription') }}*</CFormLabel>
+  <CFormLabel for="AddContact_description">{{ $t('Decription') }}*</CFormLabel>
   <div dir="ltr" class="bg-white">
  <QuillEditor  toolbar="full" theme="snow" v-model:content="form.description" contentType="html" />
   </div>
@@ -170,11 +217,6 @@
                             :title="$t('Save')"
                             :isSendingForm="isSendingForm"
                         />
-                        <DeleteButton
-                            class="mt-3 mx-2"
-                            :url="'/admin/product/'+this.main_id"
-                            redirectTo="Products"
-                        />
                     </CForm> 
                 </CCardBody>
             </CCard>
@@ -187,12 +229,8 @@ import axios from 'axios'
 import useVuelidate from '@vuelidate/core'
 import { required, maxLength } from '@vuelidate/validators'
 import SubmitButton from '@/components/SubmitButton.vue'
-import DeleteButton from '@/components/DeleteButton.vue'
-import Multiselect from 'vue-multiselect'
-import {fixingOptions} from '../../commen/fixingSelectOption'
 import { QuillEditor } from '@vueup/vue-quill'
 import '@vueup/vue-quill/dist/vue-quill.snow.css';
-import moment from 'moment';
 import { toast } from 'vue3-toastify';
 import 'vue3-toastify/dist/index.css';
 export default {
@@ -200,14 +238,12 @@ setup() {
 return { v$: useVuelidate() }
 },
 name: 'ForgetPassword',
-components: { SubmitButton, Multiselect, QuillEditor,DeleteButton },
+components: { SubmitButton, QuillEditor,},
 data() {
 return {
     form: {
     name: '',
     lang_id:null,
-    status:null,
-    slug :null,
     image:null,
     short_decription:null,
     keywords:null,
@@ -215,18 +251,27 @@ return {
     description:'',
     alt_image:null,
     alt_cover:null,
+    facebook:null,
+    twitter:null,
+    linkedin:null,
+    instagram:null,
+    pinterest:null,
+    youtube:null,
+    google:null,
+    google_maps:null,
+    address:null,
+    email:null,
+    phone:null,
+    phone2:null,
     },
     statuses: [   
                 { label: 'active', value: 'active' },
                 { label: 'deactivated', value: 'deactivated' },
                 { label: 'waiting review', value: 'waiting review' },
             ],
-    categories:[],
-    cate_selected:null,
-    cate_options:[],
     previewImage:null,
     ref_id: null,
-    main_id:null,
+    main_id:'',
     translations :[],
     errorsBack:{},
     errorMgs: '',
@@ -242,12 +287,6 @@ return {
     name: {
         required,
     },
-    status: {
-        required,
-    },
-    slug: {
-        required,
-    },
     short_decription: {
         required,
         maxLength: maxLength(350),
@@ -257,15 +296,11 @@ return {
         maxLength: maxLength(350),
     },
     },
-    cate_selected: {
-        required,
-    },
 }
 },
 methods: {
     fillForm(Thedata){
     this.form.name = Thedata.name;
-    this.form.status = Thedata.status;
     this.main_id= Thedata.id;
     this.form.lang_id= Thedata.lang_id;
     this.ref_id= Thedata.ref_id;
@@ -274,18 +309,25 @@ methods: {
     this.form.description = Thedata.description;
     this.form.alt_image = Thedata.alt_image;
     this.previewImage = Thedata.image;
-    this.form.slug = Thedata.slug;
-    this.form.parent_id = Thedata.parent_id;
-    this.form.price = Thedata.price;
-    this.form.discount = Thedata.discount;
-    this.form.discount_start = Thedata.discount_start;
-    this.form.discount_end = Thedata.discount_end;
-    this.previewGallery = Thedata.gallery;
+    this.form.facebook=Thedata.facebook;
+    this.form. twitter=Thedata.twitter;
+    this.form. linkedin=Thedata.linkedin;
+    this.form. instagram=Thedata.instagram;
+    this.form. pinterest=Thedata.pinterest;
+    this.form. youtube=Thedata.youtube;
+    this.form. google=Thedata.google;
+    this.form.  google_maps=Thedata.google_maps;
+    this.form.  address=Thedata.address;
+    this.form.  email=Thedata.email;
+    this.form.  phone=Thedata.phone;
+    this.form. phone2=Thedata.phone2;
     this.form.lang_id == this.$store.state.localLang? this.showSharedInputs = true : this.showSharedInputs = false
     },
     getCreateData(){
+        let query = ''
+        this.main_id? query = '?id='+this.main_id :  query = ''
         axios
-        .get(this.$store.state.backendUrl+'/admin/product/'+this.main_id+'/edit' , {
+        .get(this.$store.state.backendUrl+'/admin/contact_edit'+query  , {
             headers: {
                 'Authorization': 'Bearer ' + this.$store.state.token,
                 "Content-Type": "application/json",
@@ -297,11 +339,9 @@ methods: {
                 this.ShowError=true;
             }
             else{
-            this.translations = response.data.product.translations;
-            this.cate_options = fixingOptions (response.data.categories.data,'name','ref_id');
-            this.cate_selected = fixingOptions (response.data.product.categories,'name','ref_id');
-            this.products = response.data.product.data;
-                this.fillForm(response.data.product);
+            this.translations = response.data.data.translations;
+            this.contacts = response.data.data;
+                this.fillForm(response.data.data);
                 this.showForm=true;
             }
         })
@@ -314,23 +354,13 @@ methods: {
     } , 
     setTouched(theModel) {
         if (theModel === 'name' || theModel === 'all') {
-            this.sanitizeTitle();
             this.v$.form.name.$touch()
-        }
-        if (theModel === 'status' || theModel === 'all') {
-            this.v$.form.status.$touch()
-        }
-        if (theModel === 'cate_selected' || theModel === 'all') {
-            this.v$.cate_selected.$touch()
         }
         if (theModel === 'short_decription' || theModel === 'all') {
             this.v$.form.short_decription.$touch()
         }
         if (theModel === 'keywords' || theModel === 'all') {
             this.v$.form.keywords.$touch()
-        }
-        if (theModel === 'slug' || theModel === 'all') {
-            this.v$.form.slug.$touch()
         }
     },
     getTranslation(lang_id){
@@ -345,8 +375,6 @@ methods: {
                 break;
             }
         }
-
-
         if(toEdit){
             this.main_id = editId;
             this.showForm = false,
@@ -354,7 +382,7 @@ methods: {
             this.getCreateData();
         
         }else{
-            this.$router.push({ name: 'Add Product', query: { lang_id: lang_id,ref_id:this.ref_id }});
+            this.$router.push({ name: 'Contact', query: { lang_id: lang_id,id:editId,ref_id:this.ref_id }});
         }
     },
     onSubmit(event) {
@@ -363,24 +391,14 @@ methods: {
         if (!this.v$.$invalid) {
         this.isSendingForm = true
         const formData = new FormData();
-        if(this.showSharedInputs){
-        for( let value of this.cate_selected){
-            formData.append('categories[]',value.value)
-        }
-        }
         for (let [key, value] of Object.entries(this.form)) {
             if(value != null){
-                if(this.showSharedInputs){
-                if(key == 'discount_end' || key == 'discount_start'){
-                    value = moment(value).format("Y-MM-DD H:mm:ss")
-                }
-                }
                 formData.append(key,value)
             }
         }
         axios
             .post(
-            this.$store.state.backendUrl + '/admin/product/'+this.main_id+'?_method=PUT',
+            this.$store.state.backendUrl + '/admin/contact_update/'+this.main_id,
             formData,
             { headers: { 
                 'Authorization': 'Bearer ' + this.$store.state.token, 
@@ -393,7 +411,7 @@ methods: {
             })
             console.log(response)
             this.$router.push({
-                name: 'Edit Product',
+                name: 'Contact',
                 params: { id: response.data.data.id },
             })
             this.isSendingForm = false
@@ -415,9 +433,8 @@ methods: {
     
     this.form.name = null,
     this.form.short_decription = null,
-        this.form.keywords = null,
+    this.form.keywords = null,
     this.form.robot = null,
-    this.form.status = null,
     this.form.image = null,
     this.form.description = null,
     this.previewImage= "",
@@ -431,19 +448,7 @@ methods: {
         this.show = true
     })
     },
-    sanitizeTitle: function() {
-    var slug = "";
-    // Change to lower case
-    var titleLower = this.form.name.toLowerCase();
-    // Trim the last whitespace
-    slug = titleLower.replace(/\s*$/g, '');
-    // Change whitespace to "-"
-    slug = slug.replace(/\s+/g, '-');
-    this.form.slug =slug;
-    return slug;
-
-},
-onFileChange(e) {
+    onFileChange(e) {
       var files = e.target.files ;
       if (!files.length)
         return;
@@ -466,7 +471,9 @@ onFileChange(e) {
     },
 },
 mounted() {
-    this.main_id = this.$route.params.id;
+    if(this.$route.query.id){
+        this.main_id = this.$route.query.id;
+    }
     this.getCreateData();
 }
 }

@@ -54,9 +54,19 @@ export default [
   {
     component: 'CNavGroup',
     name:  t('About'),
-    to: '/about',
+    to: '/',
     icon: 'cil-puzzle',
     items: [
+      {
+        component: 'CNavItem',
+        name: 'Info',
+        to: '/info',
+      },
+      {
+        component: 'CNavItem',
+        name: 'Contact',
+        to: '/contact',
+      },
       {
         component: 'CNavItem',
         name: 'About',
