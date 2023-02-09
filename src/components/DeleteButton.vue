@@ -13,11 +13,10 @@
   import axios from 'axios'
   export default{
     name: "DeleteButton",
-    props: ['url'],
+    props: ['url','redirectTo'],
     data(){
         return {
             isSendingForm:false,
-            redirectTo,
         }
     },
     methods:{
